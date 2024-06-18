@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "601954329687",
+    "project_id": "cleveroadtest-6d358",
+    "storage_bucket": "cleveroadtest-6d358.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601954329687:android:03743b058df1601e01ef12",
+        "android_client_info": {
+          "package_name": "com.example.cleveroadtest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtDituZkK9jvt3WteZMgIfdpeR2PWer68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
