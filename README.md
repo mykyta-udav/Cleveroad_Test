@@ -1,16 +1,64 @@
-# cleveroadtest
+# Cocktail App
 
-A new Flutter project.
+Цей проект є мобільним додатком для перегляду інформації про коктейлі, зокрема рецептів, інгредієнтів, та інших деталей. Додаток використовує Firebase для аутентифікації та бази даних, а також API TheCocktailDB для отримання даних про коктейлі.
 
-## Getting Started
+## Технології
 
-This project is a starting point for a Flutter application.
+- **Flutter**: Фреймворк для розробки крос-платформених мобільних додатків.
+- **Firebase**: Використовується для аутентифікації користувачів та збереження даних.
+- **TheCocktailDB API**: API для отримання даних про коктейлі.
+- **Dart**: Мова програмування для написання Flutter додатків.
 
-A few resources to get you started if this is your first Flutter project:
+## Функціонал
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Реєстрація та логін користувачів**: Реалізовано через Firebase Authentication.
+- **Перегляд списку коктейлів**: Можливість переглядати коктейлі з TheCocktailDB API.
+- **Пошук коктейлів за інгредієнтами**: Пошук коктейлів на основі обраного інгредієнта.
+- **Детальна інформація про коктейлі**: Перегляд інформації про коктейлі, включаючи рецепти та інгредієнти.
+- **Улюблені коктейлі**: Можливість додавати коктейлі до списку улюблених.
+- **Випадковий коктейль**: Функціонал для перегляду випадкового коктейлю.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Налаштування проекту
+
+### Вимоги
+
+- Flutter SDK: [Встановити Flutter](https://flutter.dev/docs/get-started/install)
+- Firebase аккаунт: [Зареєструватися у Firebase](https://firebase.google.com/)
+
+### Інсталяція
+
+1. Клонувати репозиторій:
+    ```sh
+    git clone https://github.com/yourusername/cocktail_app.git
+    cd cocktail_app
+    ```
+
+2. Встановити залежності:
+    ```sh
+    flutter pub get
+    ```
+
+3. Налаштувати Firebase:
+    - Створити новий проект у Firebase.
+    - Додати ваш додаток (iOS та/або Android) до Firebase проекту.
+    - Завантажити `google-services.json` для Android та/або `GoogleService-Info.plist` для iOS і помістити їх у відповідні директорії проекту.
+    - Додати Firebase конфігурацію до вашого проекту у файлі `pubspec.yaml`:
+      ```yaml
+      dependencies:
+        firebase_core: latest_version
+        firebase_auth: latest_version
+        cloud_firestore: latest_version
+      ```
+
+4. Запустити додаток:
+    ```sh
+    flutter run
+    ```
+
+## Використання
+
+- **Реєстрація та логін**: Використовуйте email та пароль для реєстрації нового користувача або для входу в існуючий аккаунт.
+- **Перегляд коктейлів**: Використовуйте вкладки для перегляду списку коктейлів, випадкового коктейлю або улюблених коктейлів.
+- **Деталі коктейлю**: Натисніть на коктейль у списку для перегляду детальної інформації про нього та з можливістью прокрутки екрана.
+- **Перегляд коктелів з необхідним інгрідієнтом**: Натисніть на інгрідієнт для видачі коктелів з цим інгрідієнтом.
+- **Додавання до улюблених**: Натисніть на іконку серця для додавання або видалення коктейлю зі списку улюблених.
